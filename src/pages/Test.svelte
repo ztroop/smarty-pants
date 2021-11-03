@@ -7,7 +7,7 @@ import {
   challengesAnswered,
   currentTime,
 } from '../stores';
-import Timer from '../components/Timer.svelte';
+import Scoreboard from '../components/Scoreboard.svelte';
 
 const availableModes = [LetterMatch];
 const randomChoice = (a) => a[Math.floor(Math.random() * a.length)];
@@ -34,7 +34,7 @@ overTime.set(0);
 <div class="grid place-items-center">
   <div
     class="text-6xl font-normal leading-normal mt-0 mb-2 dark:text-blue-400 text-red-500">
-    <Timer /> Score: {$finalScore}
+    <Scoreboard />
   </div>
   <div id="progress-bar" class="progress"></div>
   {#key $challengesAnswered}

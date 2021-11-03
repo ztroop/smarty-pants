@@ -1,12 +1,12 @@
-<script lang=ts>
+<script>
 import { onMount } from 'svelte';
 
 import { finalScore, challengesAnswered } from '../../stores';
 import challenge from './index';
 
-let first_seq: string[] = [],
-  second_seq: string[] = [],
-  correctMatches: number = 0;
+let first_seq = [],
+  second_seq = [],
+  correctMatches = 0;
 
 const { generate } = challenge();
 
