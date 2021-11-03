@@ -21,7 +21,6 @@ $: if ($currentTime) {
   if ($challengeTime >= 4) {
     overTime.update((v) => v + 1);
     challengeTime.set(0);
-    console.log($overTime);
   } else {
     challengeTime.update((v) => v + 1);
   }
