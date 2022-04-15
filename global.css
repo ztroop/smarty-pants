@@ -1,0 +1,4 @@
+body {
+  background: var(--bkg-color);
+  height: 100vh;
+}
